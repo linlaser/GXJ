@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">管线机</string>
+    <string name="action_settings">Settings</string>
+    <string name="room_temperature">常温</string>
+    <string name="milk">冲奶</string>
+    <string name="honey">蜂蜜</string>
+    <string name="boiling">沸水</string>
+    <string name="water_amount_150">150mL</string>
+    <string name="water_amount_260">260mL</string>
+    <string name="water_amount_300">300mL</string>
+    <string name="water_amount_custom">手动选择\n水量</string>
+    <string name="custom1">自定义1</string>
+    <string name="custom2">自定义2</string>
+    <string name="cool_water">冷水</string>
+    <string name="tv_mode_separator">|</string>
+    <string name="count_card">公交次卡</string>
+    <string name="money_card">电子钱包</string>
+    <string name="power_card">电卡</string>
+    <string name="he_xin_tong">和信通</string>
+    <string name="exit">退出</string>
+    <string name="pp_filter_name">PP棉</string>
+    <string name="pp_filter_depiction">去除泥沙、铁锈等大颗粒</string>
+    <string name="front_carbon_filter_name">前置颗粒活性炭</string>
+    <string name="front_carbon_filter_depiction">去除异味、余氯</string>
+    <string name="ro_filter_name">RO反渗透</string>
+    <string name="ro_filter_depiction">去除抗生素、有机物、重金属、亚硝酸盐、细菌、水垢</string>
+    <string name="behind_carbon_filter_name">后置颗粒活性炭</string>
+    <string name="behind_carbon_filter_depiction">进一步改善口感</string>
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+
+</resources>

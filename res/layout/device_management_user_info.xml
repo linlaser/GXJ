@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <include
+        android:id="@+id/includeLogin"
+        layout="@layout/user_login" />
+
+    <include
+        android:id="@+id/includeRegister"
+        layout="@layout/user_register"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/includeUserInfo"
+        layout="@layout/user_info"
+        android:visibility="gone" />
+
+</RelativeLayout>

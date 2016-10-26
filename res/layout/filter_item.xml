@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#336699"
+    android:padding="10dp" >
+
+    <lecho.lib.hellocharts.view.PieChartView
+        android:id="@+id/chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+    </lecho.lib.hellocharts.view.PieChartView>
+
+    <ImageView
+        android:id="@+id/ivFilterSequence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnResetFilter"
+        android:layout_alignTop="@+id/btnBuyFilter"
+        android:src="@drawable/number1" />
+
+    <Button
+        android:id="@+id/btnBuyFilter"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:text="立即购买"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnResetFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnBuyFilter"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/btnBuyFilter"
+        android:text="重置"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvFilterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnResetFilter"
+        android:layout_alignTop="@+id/btnBuyFilter"
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@+id/ivFilterSequence"
+        android:gravity="center"
+        android:text="PP棉滤芯"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvFilterUseInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="已使用20天，建议使用90天。"
+        android:textColor="#FFFF00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvFilterDepiction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnBuyFilter"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btnBuyFilter"
+        android:text="滤芯说明：\n孔径0.1纳米，清除水中的重金属,有机物等杂质，对自来水进行三级过滤......"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#CCCCCC"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="5dp" >
+
+        <RadioButton
+            android:id="@+id/rdoBtnFilterInfo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_custom"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="滤\n芯\n信\n息"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/rdoBtnGXJInfo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_custom"
+            android:button="@null"
+            android:gravity="center"
+            android:text="管\n线\n机\n信\n息"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/rdoBtnJSQInfo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_custom"
+            android:button="@null"
+            android:gravity="center"
+            android:text="净\n水\n器\n信\n息"
+            android:textSize="30sp" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="15"
+        android:background="@android:color/white" >
+    </RelativeLayout>
+
+</LinearLayout>

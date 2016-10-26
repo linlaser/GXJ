@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="lecho.lib.hellocharts.samples.PreviewLineChartActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="50dp" >
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/chart_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </lecho.lib.hellocharts.view.LineChartView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray" />
+
+        <lecho.lib.hellocharts.view.ColumnChartView
+            android:id="@+id/chart_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </lecho.lib.hellocharts.view.ColumnChartView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:gravity="end"
+                    android:padding="3dip"
+                    android:text="进水TDS" />
+
+                <TextView
+                    android:background="#FF4444"
+                    android:padding="3dip" >
+                </TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:gravity="end"
+                    android:padding="3dip"
+                    android:text="出水TDS" />
+
+                <TextView
+                    android:background="#33B5E5"
+                    android:padding="3dip" >
+                </TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:gravity="end"
+                    android:padding="3dip"
+                    android:text="出水量" />
+
+                <TextView
+                    android:background="@android:color/darker_gray"
+                    android:padding="3dip" >
+                </TextView>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

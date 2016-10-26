@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="40dp"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:paddingTop="40dp" >
+
+    <TextView
+        android:id="@+id/tvSetTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="温度："
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" >
+
+        <Button
+            android:id="@+id/btnTemperatureSubtraction"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="-"
+            android:textSize="30sp" />
+
+        <SeekBar
+            android:id="@+id/skBarSetTemperature"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:progressDrawable="@drawable/seekbar_progress"
+            android:thumb="@drawable/seekbar_thumb_custom_out_water_parameter" />
+
+        <Button
+            android:id="@+id/btnTemperatureAddition"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="+"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSetWaterAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="水量："
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" >
+
+        <Button
+            android:id="@+id/btnWaterAmountSubtraction"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="-"
+            android:textSize="30sp" />
+
+        <SeekBar
+            android:id="@+id/skBarSetWaterAmount"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:progressDrawable="@drawable/seekbar_progress"
+            android:thumb="@drawable/seekbar_thumb_custom_out_water_parameter" />
+
+        <Button
+            android:id="@+id/btnWaterAmountAddition"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="+"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/tvSetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名称："
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/edtTxtSetName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:textSize="30sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（自定义名称，最多6个字符）"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

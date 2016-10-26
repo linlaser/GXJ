@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#CCCCCC"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <RadioButton
+            android:id="@+id/rdoBtnGeneralSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/radiobutton_custom"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="通用设置"
+            android:textSize="26sp" />
+
+        <RadioButton
+            android:id="@+id/rdoBtnWiFiSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/radiobutton_custom"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="WiFi设置"
+            android:textSize="26sp" />
+
+        <RadioButton
+            android:id="@+id/rdoBtnBindDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/radiobutton_custom"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="绑定设备"
+            android:textSize="26sp" />
+
+        <RadioButton
+            android:id="@+id/rdoBtnUserInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/radiobutton_custom"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="用户信息"
+            android:textSize="26sp" />
+
+        <RadioButton
+            android:id="@+id/rdoBtnWaterCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/radiobutton_custom"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="取水码"
+            android:textSize="26sp" />
+
+        <RadioButton
+            android:id="@+id/rdoBtnAdvancedSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/radiobutton_custom"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="高级设置"
+            android:textSize="26sp" />
+
+        <RadioButton
+            android:id="@+id/rdoBtnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/radiobutton_custom"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="关于"
+            android:textSize="26sp" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="@android:color/white" >
+    </RelativeLayout>
+
+</LinearLayout>

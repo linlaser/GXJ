@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingEnd="50dp"
+            android:paddingStart="30dp" >
+
+            <Button
+                android:id="@+id/btnCountCard"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/count_card"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnMoneyCard"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:text="@string/money_card"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnHeXinTong"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/he_xin_tong"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnPowerCard"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:text="@string/power_card"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/img11" >
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

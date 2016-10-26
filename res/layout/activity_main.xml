@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/functionButtonsLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_weight="5" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boli_03"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/rdoBtnRoomTemperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button_water_room_temperature"
+                        android:button="@null"
+                        android:drawableTop="@drawable/button_transparent"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBtnWaterAmount150"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/botton_water_amount"
+                        android:button="@null"
+                        android:drawableTop="@drawable/button_transparent"
+                        android:gravity="center"
+                        android:text="@string/water_amount_150"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBtnCoolWater"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/rdobtn_cool_water"
+                        android:button="@null"
+                        android:drawableTop="@drawable/button_transparent"
+                        android:gravity="center"
+                        android:text="@string/cool_water"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/rdoBtnMilk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="130dp"
+                        android:background="@drawable/button_water_milk"
+                        android:button="@null"
+                        android:drawableTop="@drawable/button_transparent"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBtnWaterAmount260"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="130dp"
+                        android:background="@drawable/botton_water_amount"
+                        android:button="@null"
+                        android:drawableTop="@drawable/button_transparent"
+                        android:gravity="center"
+                        android:text="@string/water_amount_260"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/rdoBtnHoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="160dp"
+                        android:background="@drawable/button_water_honey"
+                        android:button="@null"
+                        android:drawableTop="@drawable/button_transparent"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBtnWaterAmount300"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="160dp"
+                        android:background="@drawable/botton_water_amount"
+                        android:button="@null"
+                        android:drawableTop="@drawable/button_transparent"
+                        android:gravity="center"
+                        android:text="@string/water_amount_300"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/rdoBtnBoiling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="130dp"
+                        android:background="@drawable/button_water_boiling"
+                        android:button="@null"
+                        android:drawableTop="@drawable/button_transparent"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBtnWaterAmountCustom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="130dp"
+                        android:background="@drawable/botton_water_amount"
+                        android:button="@null"
+                        android:drawableTop="@drawable/button_transparent"
+                        android:gravity="center"
+                        android:text="@string/water_amount_custom"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/rdoBtnCustom1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_water_custom_temperature"
+                        android:button="@null"
+                        android:drawableTop="@drawable/button_transparent"
+                        android:gravity="center"
+                        android:text="@string/custom1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBtnCustom2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/button_water_custom_temperature"
+                        android:button="@null"
+                        android:drawableTop="@drawable/button_transparent"
+                        android:gravity="center"
+                        android:text="@string/custom2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/setting_information_display" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnDeviceManagement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botton_round_custom"
+                android:text="设备管理"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnWaterInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botton_round_custom"
+                android:text="净水信息"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLifeServices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botton_round_custom"
+                android:text="生活缴费"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnWebViewMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botton_round_custom"
+                android:text="愿望网"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnOutWater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botton_water"
+                android:text="出水"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNowTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:text="time"
+        android:textColor="#333333"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/showEditText"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="#666666"
+        android:clickable="false"
+        android:editable="false"
+        android:gravity="top"
+        android:longClickable="false"
+        android:text="showEditText"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layoutDebugToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnTest1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Test1" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="发送" />
+
+        <Button
+            android:id="@+id/clsButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="清除" />
+
+        <Button
+            android:id="@+id/adButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="TestActivity" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="更新APP" />
+
+        <ToggleButton
+            android:id="@+id/tglBtnEnableHardwareAccelerated"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOff="硬件加速\n已关闭"
+            android:textOn="硬件加速\n已开启" />
+
+        <ToggleButton
+            android:id="@+id/tglBtnUART"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:textOff="串口\n已关闭"
+            android:textOn="串口\n已打开" />
+
+        <ToggleButton
+            android:id="@+id/tglBtnShowUARTDebug"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOff="UART调试框\n已关闭"
+            android:textOn="UART调试框\n已打开" />
+
+        <ToggleButton
+            android:id="@+id/toggleBtn_AD"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="0"
+            android:background="@drawable/toggle_botton_ad"
+            android:textOff=""
+            android:textOn="" />
+
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="EXIT" />
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/tglBtnDebug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:textOff="调试窗口"
+        android:textOn="调试窗口" />
+
+    <ToggleButton
+        android:id="@+id/tglBtnChildLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/tglbtn_child_lock"
+        android:textOff=""
+        android:textOn="" />
+
+</RelativeLayout>
